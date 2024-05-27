@@ -21,12 +21,12 @@ public class Startmenü {
         shell.setLayout(new GridLayout(2, false));
 
         Label player1Label = new Label(shell, SWT.NONE);
-        player1Label.setText("Spieler X:");
+        player1Label.setText("Spieler Blau:");
         Text player1Text = new Text(shell, SWT.BORDER);
         player1Text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
 
         Label player2Label = new Label(shell, SWT.NONE);
-        player2Label.setText("Spieler O:");
+        player2Label.setText("Spieler Rot:");
         Text player2Text = new Text(shell, SWT.BORDER);
         player2Text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
 
@@ -37,6 +37,7 @@ public class Startmenü {
         startButton.setLayoutData(gridData);
 
         Label resultLabel = new Label(shell, SWT.NONE);
+        resultLabel.setAlignment(SWT.CENTER);
         resultLabel.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
 
         startButton.addSelectionListener(new SelectionAdapter() {

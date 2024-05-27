@@ -5,8 +5,7 @@ import org.eclipse.swt.widgets.Shell;
 
 public class Spieler {
 	public String name;
-	public char symbol;
-	public int wins;
+	public char color;
 	
 	
 
